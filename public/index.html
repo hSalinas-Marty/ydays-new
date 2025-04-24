@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashNews - Actualités de dernière minute</title>
+    <link href="https://fonts.googleapis.com/css2?family=Giaza&family=Glacial+Indifference&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carousel.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>FlashNews</h1>
+                <p>L'info en temps réel</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="#">Catégories</a>
+                        <div class="dropdown-content" id="categories-dropdown">
+                            <!-- Rempli dynamiquement par JavaScript -->
+                        </div>
+                    </li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Rechercher...">
+                    <button id="search-button">🔍</button>
+                    <div id="search-results"></div>
+                </div>
+            </nav>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="breaking-news">
+            <h2>Dernières actualités</h2>
+            <div class="carousel">
+                <div class="carousel-inner" id="breaking-news-carousel">
+                    <!-- Articles récents chargés dynamiquement -->
+                </div>
+                <button class="carousel-control prev">❮</button>
+                <button class="carousel-control next">❯</button>
+            </div>
+        </section>
+
+        <section class="latest-articles">
+            <h2>Articles récents</h2>
+            <div class="articles-grid" id="articles-grid">
+                <!-- Articles chargés dynamiquement -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="about.html">À propos</a>
+                <a href="contact.html">Contact</a>
+                <a href="legal.html">Mentions légales</a>
+            </div>
+            <p>© 2023 FlashNews - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="js/carousel.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/time-ago.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
